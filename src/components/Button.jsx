@@ -5,12 +5,12 @@ import {
     TouchableOpacity
  } from "react-native"; 
 
-export function Button({ onPress }) { //Esse "onPress é um atributo criado e passado pelo componente utilizado na Home. Seu valor é passado na Home.
+export function Button({ addNewSkill }) { //Esse "onPress é um atributo criado e passado pelo componente utilizado na Home. Seu valor é passado na Home.
     return (
         <TouchableOpacity
           style={styles.button}
           activeOpacity={0.7}
-          onPress={onPress}
+          onPress={addNewSkill}
         >
           <Text style={styles.buttonText}>Add</Text>
         </TouchableOpacity>

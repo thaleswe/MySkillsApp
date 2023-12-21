@@ -12,3 +12,8 @@
 07. Meu primeiro componente customizado
 08. Propriedades no React Native
 09. Scroll View x FlatList
+10. Introdução aos Hooks com useState
+11. Continuando com Hooks useEffect
+12. Finalizando essa etapa do App
+
+3° Utilizando TypeScript
