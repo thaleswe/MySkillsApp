@@ -17,3 +17,7 @@
 12. Finalizando essa etapa do App
 
 3° Utilizando TypeScript
+01. Adicionando e configurando o TypeScript no App
+02. Tipando objetos e estados
+03. Tipando componentes com TypeScript
+04. Finalizando o nosso App

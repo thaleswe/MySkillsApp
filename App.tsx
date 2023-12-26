@@ -5,9 +5,9 @@ import { StatusBar } from "react-native";
 
 export default function App() {
   return ( // fragment
-  <>
-    <StatusBar barStyle={"light-content"} />
-    <Home/>
+    <>
+      <StatusBar barStyle={"light-content"} />
+      <Home />
     </>
   )
 }
