@@ -1,20 +1,22 @@
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
-interface SkillCardProps extends TouchableOpacityProps {
+interface SkillCardProps {
     skill: string;
+    removeSkill: () => void;
 }
 
-export function SkillCard({ skill, ...rest }: SkillCardProps) {
+export function SkillCard({ skill, removeSkill }: SkillCardProps) {
     return (
-        <TouchableOpacity
-            style={styles.buttonSkill}
-            activeOpacity={0.5}
-            {...rest}>
+        <View style={styles.buttonSkill}>
             <Text style={styles.textSkill}>
                 {skill}
             </Text>
-        </TouchableOpacity>
+
+            <TouchableOpacity onPress={removeSkill}>
+                <Text style={styles.buttonRemoveSkill}>X</Text>
+            </TouchableOpacity>
+        </View>
     )
 }
 
@@ -26,12 +28,23 @@ const styles = StyleSheet.create({
         marginVertical: 5,
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        alignItems: "center",
     },
 
     textSkill: {
         color: "#fff",
         fontSize: 22,
         fontWeight: "bold",
+        width: 270
+    },
+
+    buttonRemoveSkill: {
+        padding: 7,
+        borderRadius: 4,
+        color: "#a50b0b",
+        backgroundColor: "#262935",
+        fontWeight: "bold",
+        gap: 40
     }
 })

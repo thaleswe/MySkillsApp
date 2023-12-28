@@ -79,7 +79,7 @@ export function Home() {
         data={mySkills}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <SkillCard skill={item.name} onPress={() => handleRemoveSkill(item.id)} />
+          <SkillCard skill={item.name} removeSkill={() => handleRemoveSkill(item.id)} />
         )}
       />
 
