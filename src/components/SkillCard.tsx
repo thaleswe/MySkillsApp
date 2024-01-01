@@ -36,15 +36,16 @@ const styles = StyleSheet.create({
         color: "#fff",
         fontSize: 22,
         fontWeight: "bold",
-        width: 270
+        width: "80%"
     },
 
     buttonRemoveSkill: {
-        padding: 7,
-        borderRadius: 4,
+        padding: 12,
+        borderRadius: 5,
         color: "#a50b0b",
         backgroundColor: "#262935",
         fontWeight: "bold",
-        gap: 40
+        fontSize: 21,
+        textAlign: "center"
     }
 })

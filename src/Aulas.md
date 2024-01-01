@@ -21,3 +21,14 @@
 02. Tipando objetos e estados
 03. Tipando componentes com TypeScript
 04. Finalizando o nosso App
+
+4° Debug no React Native
+01. Compreendendo a LogBox no React Native
+02. Exibindo logs com a DevTools
+03. Debugando o App
+04. Inspector e Perf Monitor
+05. Conhecendo o Dev Docs
+06. Flipper
+
+5° Conclusão
+01. Encerramento do Módulo
